@@ -1,0 +1,4 @@
+---
+permalink: assets/css/bundle.css
+---
+{% set css %}{% include "./node_modules/normalize.css/normalize.css" %}{% endset %}{{ css | cssmin }}

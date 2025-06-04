@@ -1,0 +1,11 @@
+{
+  "name": "eleventy-sample",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "dependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "clean-css": "^5.3.3",
+    "normalize.css": "^8.0.1"
+  }
+}
