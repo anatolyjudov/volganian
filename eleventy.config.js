@@ -1,6 +1,7 @@
 const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.ignores.add("README.md");
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   eleventyConfig.addPassthroughCopy("assets/css/main.css");
   eleventyConfig.addPassthroughCopy("assets/images/");
