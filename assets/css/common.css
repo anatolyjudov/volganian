@@ -1,8 +1,12 @@
 html {
     font-family: "Literata", serif;
     font-size: 16px;
-    background-color: #f5f5f5;
+    background-color: #FFFAED;
     font-weight: 300;
+    background-image: image-set(
+        url('/assets/images/background.png') 2x
+    );
+    background-repeat: repeat;
 }
 
 body {
