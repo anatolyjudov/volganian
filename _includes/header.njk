@@ -1,0 +1,10 @@
+<header>
+    <div class="logo">volganian</div>
+
+    {% if pagination_page %}
+    <div class="pagination">
+        <span class="emoji">📑</span>
+        <a href="/">{{ pagination_page }} / {{ globals.pagination_total_pages }}</a>
+    </div>
+    {% endif %}
+</header>

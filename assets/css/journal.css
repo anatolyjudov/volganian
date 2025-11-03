@@ -1,1 +1,11 @@
-/* CSS for journal pages */
+main {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+    main {
+        margin-top: 2.8rem;
+        margin-bottom: 5.6rem;
+    }
+}

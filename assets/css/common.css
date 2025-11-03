@@ -1,53 +1,243 @@
 html {
     font-family: "Literata", serif;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.4rem;
+    color: #333;
     background-color: #FFFAED;
     font-weight: 300;
     background-image: image-set(
         url('/assets/images/background.png') 2x
     );
     background-repeat: repeat;
+    min-width: 71rem;
 }
 
 body {
+    width: 64.5rem;
+    margin: 0 auto;
+}
+
+header {
+    height: 5rem;
     position: relative;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .2);
 }
+    header .logo {
+        text-align: center;
+        padding-top: 2.2rem;
+        font-size: 1.2rem;
+    }
 
-header.logo {
-    position: absolute;
-    top: 1.6rem;
-    left: 3.2rem;
-}
+    header .pagination {
+        position: absolute;
+        top: 2.2rem;
+        right: 0;
+        width: 5.5rem;
+        font-size: .9rem;
+        display: flex;
+    }
+        header .pagination span {
+            display: block;
+            width: 1.5rem;
+        }
 
-.logo, h1, h2 {
+    header .pagination a, header .pagination a:visited {
+        color: rgba(51, 51, 51, 1);
+        text-decoration-color: rgba(51, 51, 51, .3);
+    }
+        header .pagination a:hover, header .pagination a:visited:hover {
+            color: rgba(51, 51, 51, .75);
+        }
+
+header .logo {
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     color: #333;
 }
 
+footer {
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .2);
+    text-align: center;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+}
+    footer > span {
+        display: block;
+        line-height: 1.6em;
+    }
+
+    footer > a, footer > a:visited {
+        color: rgba(51, 51, 51, 1);
+        text-decoration-color: rgba(51, 51, 51, .3);
+    }
+        footer > a:hover, footer > a:visited:hover {
+            color: rgba(51, 51, 51, .75);
+        }
+
+
+h1, h2, .header-style {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 h1 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
+    font-size: 2.4rem;
     line-height: 1.8rem;
+    margin: 4rem 11rem 1.8rem 5.5rem;
+    text-indent: 2.2rem;
 }
 
-h2, .logo  {
+h2 {
     font-size: 1.6rem;
     line-height: 1.8rem;
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    margin: .6rem 11rem .6rem 5.5rem;
+    text-indent: 2.2rem;
 }
 
+a {
+    color: rgba(42, 99, 192, 1);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .25em;
+}
+a:hover {
+    color: rgba(42, 99, 192, .75);
+}
+a:visited {
+    color: rgba(181, 41, 183, 1);
+}
+a:visited:hover {
+    color: rgba(181, 41, 183, .75);
+}
 
-@media (max-width: 1025px) {
+blockquote {
+    display: flex;
+    column-gap: 4rem;
+    margin: 0;
+    padding: 0;
+}
+    blockquote div.avatar {
+        width: 9.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+        blockquote div.avatar img {
+            margin: 0;
+            width: 4rem;
+            height: 4rem;
+        }
+
+    blockquote > p {
+        width: 36.5rem;
+        line-height: 1.75rem;
+        text-indent: 0;
+        margin: 0;
+        padding: 1.8rem 3rem 1.8rem 3rem;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 0 1.2rem 1.2rem 1.2rem;
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, .15);
+        position: relative;
+    }
+    blockquote > p::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2.5rem;
+        height: 1.4rem;
+        top: 0;
+        left: -2.5rem;
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 28'><polygon points='4,4 54,4 54,29' fill='rgba(0,0,0,0.15)'/><polygon points='0,0 50,0 50,25' fill='white'/></svg>") no-repeat center;
+        background-position: 0 0;
+    }
+
+@media (max-width: 767px) {
+
   html {
-    font-size: 24px;
+    font-size: 16px;
+    min-width: 0;
   }
+
+  body {
+    width: 20rem;
+  }
+
+  header .logo {
+    font-size: 1.25rem;
+  }
+
+  header .pagination {
+    width: 3.5rem;
+    font-size: .875rem;
+    display: block;
+    text-align: right;
+  }
+    header .pagination span {
+        display: inline;
+        width: auto;
+        margin-right: .2rem;
+    }
+  
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    margin: 2.8rem 0 1.4rem 0;
+    text-indent: 0;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  p {
+    margin: .6rem 0 .6rem 0;
+    text-indent: 1.25rem;
+  }
+
+  blockquote {
+    display: block;
+    position: relative;
+  }
+
+    blockquote div.avatar {
+        display: block;
+        position: absolute;
+        top: -5rem;
+        left: 0;
+    }
+
+        blockquote div.avatar img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+  blockquote > p {
+    font-size: .875rem;
+    margin: 0 0 0 1.25rem;
+    width: calc(20rem - 1.25rem - 1rem - 2.25rem);
+    padding: 1rem 1rem 1rem 2.25rem;
+  }
+
+  blockquote > p::before {
+    width: 1.0625rem;
+    height: 1.875rem;
+    top: -1.875rem;
+    left: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 30'><polygon points='4,4 4,34 21,34' fill='rgba(0,0,0,0.15)'/><polygon points='0,0 0,30 17,30' fill='white'/></svg>") no-repeat center;
+    background-position: 0 0;
+  }
+
 }

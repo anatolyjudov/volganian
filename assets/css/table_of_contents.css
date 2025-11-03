@@ -1,0 +1,103 @@
+.table_of_contents header {
+    border-style: none;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+main > blockquote:first-child {
+    margin-bottom: 4rem;
+}
+
+nav > table {
+    padding: 0;
+    margin: 0 0 3rem;
+    display: flex;
+    column-gap: 1.5rem;
+    border-collapse: collapse;
+}
+
+nav > table > caption {
+    width: 15rem;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.4rem;
+}
+nav > table > caption > div.glyph {
+    display: block;
+    width: 4rem;
+    text-align: left;
+}
+nav > table > caption > div.glyph > span {
+    position: relative;
+    top: .4rem;
+}
+
+nav > table > tbody > tr > td {
+    vertical-align: bottom;
+}
+nav > table > tbody > tr:not(:first-child) > td {
+    padding-top: .8rem;
+}
+
+nav > table > tbody > tr > td:first-child {
+    width: 31.5rem;
+}
+nav > table > tbody > tr > td:last-child {
+    text-align: right;
+    width: 2rem;
+}
+
+nav > table > tbody > tr {
+    position: relative;
+}
+
+nav > table > tbody > tr:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-style: dotted;
+    border-width: 0 0 1px;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+nav > table td > a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    nav > table {
+        column-gap: .5rem;
+        display: table;
+    }
+
+    nav > table > caption {
+        width: 6rem;;
+        height: 2.5rem;
+        display: table-caption;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+        nav > table > caption > div.glyph {
+            width: 2.5rem;
+            display: block;
+            text-align: left;
+        }
+        nav > table > caption > div.glyph > span {
+            display: inline;
+            position: initial;
+            top: 0;
+        }
+
+    nav > table > tbody > tr > td:first-child {
+        width: 23rem;
+    }
+    nav > table > tbody > tr > td:last-child {
+        width: 1.5rem;
+}
+}
