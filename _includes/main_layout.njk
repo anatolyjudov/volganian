@@ -13,10 +13,16 @@
   {% if body_class %}
     <link rel="stylesheet" href="/assets/css/{{ body_class }}.css">
   {% endif %}
+  {% if body_class == 'journal' %}
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
+  {% endif %}
 </head>
 <body class="{{ body_class }}">
   {% include "header.njk" %}
   <main>{{ content | safe }}</main>
   {% include "footer.njk" %}
+  {% if body_class == 'journal' %}
+    <script src="/assets/js/lightbox.js" defer></script>
+  {% endif %}
 </body>
 </html>

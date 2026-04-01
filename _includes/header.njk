@@ -1,5 +1,7 @@
 <header>
-    <div class="logo">volganian</div>
+    <div class="logo">
+        {% if page.url == '/' %}volganian{% else %}<a href="/">volganian</a>{% endif %}
+    </div>
 
     {% if pagination_page %}
     <div class="pagination">

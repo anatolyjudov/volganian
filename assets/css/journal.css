@@ -9,3 +9,45 @@ main {
         margin-bottom: 5.6rem;
     }
 }
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5.5rem;
+    margin-right: 11rem;
+    padding: 1rem;
+}
+
+figure > a {
+    display: block;
+    flex: 0 1 auto;
+    margin: -1rem;
+    transition: transform .2s, z-index 0s;
+    position: relative;
+    z-index: 0;
+}
+
+figure > a {
+    transform: rotate(var(--rot, 0deg));
+}
+
+figure > a:hover {
+    transform: rotate(var(--rot, 0deg)) scale(1.08);
+    z-index: 1;
+}
+
+figure > a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
+}
+
+@media (max-width: 767px) {
+    figure {
+        margin-left: 0;
+        margin-right: 0;
+        gap: .25rem;
+    }
+}

@@ -1,0 +1,29 @@
+#lb {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, .95);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+#lb.lb-active {
+    display: flex;
+}
+
+.lb-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 4px solid #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+.lb-img.lb-loading {
+    filter: blur(8px);
+}
