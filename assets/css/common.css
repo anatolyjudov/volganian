@@ -105,11 +105,22 @@ h1 {
 h2 {
     font-size: 1.6rem;
     line-height: 1.8rem;
+    margin: 1.8rem 11rem .7rem calc(5.5rem + 2.2rem);
+    text-indent: 0;
 }
 
 p {
     margin: .7rem 11rem .7rem 5.5rem;
     text-indent: 2.2rem;
+}
+
+ul {
+    margin: .7rem 11rem .7rem calc(5.5rem + 2.2rem);
+    padding-left: 1rem;
+}
+
+li + li {
+    margin-top: .7rem;
 }
 
 a {
