@@ -112,6 +112,7 @@ figure {
     margin-left: 5.5rem;
     margin-right: 11rem;
     padding: 1rem;
+    align-items: center;
 }
 
 figure > a {
