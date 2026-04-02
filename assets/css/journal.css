@@ -3,10 +3,106 @@ main {
     margin-bottom: 3rem;
 }
 
+aside.note-left {
+    float: left;
+    width: 4rem;
+}
+
+aside.note-right {
+    width: 9.5rem;
+    text-align: left;
+    float: right;
+    margin-left: 1.5rem;
+    position: relative;
+}
+    aside.note-right:has(+ p), aside.note-left:has(+ p) {
+        margin-top: .7rem;
+    }
+
+aside span.emoji {
+    display: block;
+    font-size: 2rem;
+}
+    aside span.emoji.big {
+        font-size: 2.4rem;
+    }
+
+aside.glyph-after-right, aside.glyph-after-left {
+    height: 0;
+    padding: 0;
+    position: relative;
+}
+    aside.glyph-after-right {
+        float: right;
+        width: 9.5rem;
+        margin: 0 0 0 1.5rem;
+    }
+    aside.glyph-after-left {
+        float: left;
+        width: 4rem;
+        margin: 0;
+    }
+
+p + aside.glyph-after-right, p + aside.glyph-after-left {
+    margin-top: -.7rem;
+}
+h1 + aside.glyph-after-right, h1 + aside.glyph-after-left {
+    margin-top: -1.8rem;
+}
+
+aside.glyph-after-right > span.emoji,
+aside.glyph-after-left > span.emoji {
+    position: absolute;
+    top: -2rem;
+    width: 2rem;
+    height: 2rem;
+}
+    aside.glyph-after-right > span.emoji.big,
+    aside.glyph-after-left > span.emoji.big {
+        top: -2.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
 @media (max-width: 767px) {
     main {
         margin-top: 2.8rem;
         margin-bottom: 5.6rem;
+    }
+
+    aside.note-left,
+    aside.note-right {
+        float: none;
+        width: auto;
+        margin: .7rem 0;
+        text-align: center;
+    }
+
+    aside.glyph-after-left,
+    aside.glyph-after-right {
+        float: none;
+        width: auto;
+        height: auto;
+        margin: .7rem 0;
+        text-align: center;
+    }
+
+    p + aside.glyph-after-right,
+    p + aside.glyph-after-left,
+    h1 + aside.glyph-after-right,
+    h1 + aside.glyph-after-left {
+        margin-top: .7rem;
+    }
+
+    aside.glyph-after-right > span.emoji,
+    aside.glyph-after-left > span.emoji,
+    aside.glyph-after-right > span.emoji.big,
+    aside.glyph-after-left > span.emoji.big {
+        display: inline;
+        position: static;
+        width: auto;
+        height: auto;
+        top: auto;
     }
 }
 
