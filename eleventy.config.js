@@ -16,6 +16,8 @@ module.exports = function(eleventyConfig) {
 
   // CNAME tells GitHub Pages which custom domain to serve the site from.
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("sitemap.xml");
 
   // Copy source JPGs to _site so they're available as originals if needed.
   // Note: processed/resized images are written directly to _site/img/ by eleventy-img
