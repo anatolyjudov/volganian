@@ -221,7 +221,9 @@ blockquote {
 
   h2 {
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 1.4rem;
+    margin: 1.4rem 0 .7rem 0;
+    text-align: center;
   }
 
   p {
