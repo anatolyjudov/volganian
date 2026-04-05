@@ -73,7 +73,7 @@ aside.glyph-after-left > span.emoji {
     aside.note-right {
         float: none;
         width: auto;
-        margin: .7rem 0;
+        margin: 1.2rem 0;
         text-align: center;
     }
 
@@ -82,7 +82,7 @@ aside.glyph-after-left > span.emoji {
         float: none;
         width: auto;
         height: auto;
-        margin: .7rem 0;
+        margin: 1.2rem 0;
         text-align: center;
     }
 
@@ -90,7 +90,7 @@ aside.glyph-after-left > span.emoji {
     p + aside.glyph-after-left,
     h1 + aside.glyph-after-right,
     h1 + aside.glyph-after-left {
-        margin-top: .7rem;
+        margin-top: 1.2rem;
     }
 
     aside.glyph-after-right > span.emoji,
