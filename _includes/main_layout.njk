@@ -9,12 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/bundle.css">
   <link rel="stylesheet" href="/assets/css/common.css">
-  {% if body_class %}
-    <link rel="stylesheet" href="/assets/css/{{ body_class }}.css">
-  {% endif %}
-  {% if body_class == 'journal' %}
-    <link rel="stylesheet" href="/assets/css/lightbox.css">
-  {% endif %}
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  {% if body_class %}<link rel="stylesheet" href="/assets/css/{{ body_class }}.css">{% endif %}
+  {% if body_class == 'journal' %}<link rel="stylesheet" href="/assets/css/lightbox.css">{% endif %}
 </head>
 <body class="{{ body_class }}">
   {% include "header.njk" %}

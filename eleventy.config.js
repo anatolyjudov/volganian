@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/css/");
   eleventyConfig.addPassthroughCopy("assets/images/");
   eleventyConfig.addPassthroughCopy("assets/js/");
+  eleventyConfig.addPassthroughCopy("favicon.svg");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
 
   // CNAME tells GitHub Pages which custom domain to serve the site from.
   eleventyConfig.addPassthroughCopy("CNAME");
