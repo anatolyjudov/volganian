@@ -118,12 +118,9 @@ figure > a {
     display: block;
     flex: 0 1 auto;
     margin: -1rem;
-    transition: transform .2s, z-index 0s;
+    transition: transform .2s;
     position: relative;
     z-index: 0;
-}
-
-figure > a {
     transform: rotate(var(--rot, 0deg));
 }
 
